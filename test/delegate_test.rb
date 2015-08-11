@@ -1,6 +1,6 @@
 require_relative 'test_helper'
 
-class DelegateTest < MiniTest::Unit::TestCase
+class DelegateTest < Minitest::Test
   class Delegator
     include Chassis.delegate(:add, to: :object)
 

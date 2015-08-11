@@ -1,6 +1,6 @@
 require_relative 'test_helper'
 
-class ArrayUtilsTest < MiniTest::Unit::TestCase
+class ArrayUtilsTest < Minitest::Test
   def utils
     Chassis::ArrayUtils
   end

@@ -1,7 +1,7 @@
 require_relative '../test_helper'
 require 'chassis/core_ext/hash'
 
-class HashCoreExtTest < MiniTest::Unit::TestCase
+class HashCoreExtTest < Minitest::Test
   def test_symbolize
     assert_equal({ foo: 'bar' }, { 'foo' => 'bar' }.symbolize)
   end

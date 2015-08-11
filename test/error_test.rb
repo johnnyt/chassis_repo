@@ -1,6 +1,6 @@
 require_relative 'test_helper'
 
-class ErrorTest < MiniTest::Unit::TestCase
+class ErrorTest < Minitest::Test
   def test_delegates_to_tnt
     klass = Chassis.error do |foo|
       "#{foo} bar"

@@ -1,6 +1,6 @@
 require_relative '../test_helper'
 
-class RepoDelegationTest < MiniTest::Unit::TestCase
+class RepoDelegationTest < Minitest::Test
   class PersonRepo
     extend Chassis::Repo::Delegation
 

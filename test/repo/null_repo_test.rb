@@ -1,6 +1,6 @@
 require_relative '../test_helper'
 
-class NullRepoTest < MiniTest::Unit::TestCase
+class NullRepoTest < Minitest::Test
   Person = Struct.new :name do
     attr_accessor :id
   end

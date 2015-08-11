@@ -1,6 +1,6 @@
 require_relative 'test_helper'
 
-class StringUtilsTest < MiniTest::Unit::TestCase
+class StringUtilsTest < Minitest::Test
   def utils
     Chassis::StringUtils
   end

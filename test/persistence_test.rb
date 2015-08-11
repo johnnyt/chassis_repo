@@ -1,6 +1,6 @@
 require_relative "test_helper"
 
-class PersistenceTest < MiniTest::Unit::TestCase
+class PersistenceTest < Minitest::Test
   class FakeRepo
 
   end

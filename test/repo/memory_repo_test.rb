@@ -1,7 +1,7 @@
 require_relative '../test_helper'
 require_relative 'repo_tests'
 
-class MemoryRepoTest < MiniTest::Unit::TestCase
+class MemoryRepoTest < Minitest::Test
   class TestRepo < Chassis::MemoryRepo
     def query_person_named(klass, selector)
       all(klass).select do |person|

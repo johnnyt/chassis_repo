@@ -1,6 +1,6 @@
 require_relative 'test_helper'
 
-class LoggerTest < MiniTest::Unit::TestCase
+class LoggerTest < Minitest::Test
   #def test_log_level_defaults_to_env_variable
   #  with_env :warn do
   #    logger = Chassis::Logger.new $stdout

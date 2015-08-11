@@ -1,7 +1,7 @@
 require_relative '../test_helper'
 require 'chassis/core_ext/string'
 
-class StringCoreExtTest < MiniTest::Unit::TestCase
+class StringCoreExtTest < Minitest::Test
   def test_underscore
     assert_equal('foo_bar', 'FooBar'.underscore)
   end
