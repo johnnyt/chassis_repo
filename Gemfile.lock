@@ -26,9 +26,6 @@ GEM
     mocha (1.1.0)
       metaclass (~> 0.0.1)
     prox (0.0.1)
-    rack (1.6.4)
-    rack-test (0.6.3)
-      rack (>= 1.0)
     rake (10.4.2)
     ruby-progressbar (1.7.0)
     tnt (0.1.0)
@@ -42,5 +39,4 @@ DEPENDENCIES
   minitest (= 5.4.2)
   minitest-reporters
   mocha
-  rack-test
   rake
