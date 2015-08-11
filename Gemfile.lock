@@ -15,7 +15,7 @@ GEM
     lift (0.1.0)
     logger-better (0.2.1)
     metaclass (0.0.4)
-    minitest (5.7.0)
+    minitest (5.4.2)
     mocha (1.1.0)
       metaclass (~> 0.0.1)
     prox (0.0.1)
@@ -32,7 +32,7 @@ PLATFORMS
 DEPENDENCIES
   bundler
   chassis!
-  minitest
+  minitest (= 5.4.2)
   mocha
   rack-test
   rake
