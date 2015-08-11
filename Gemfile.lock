@@ -11,11 +11,18 @@ PATH
 GEM
   remote: http://rubygems.org/
   specs:
+    ansi (1.4.3)
+    builder (3.2.2)
     interchange (0.1.0)
     lift (0.1.0)
     logger-better (0.2.1)
     metaclass (0.0.4)
     minitest (5.4.2)
+    minitest-reporters (1.0.7)
+      ansi
+      builder
+      minitest (>= 5.0)
+      ruby-progressbar
     mocha (1.1.0)
       metaclass (~> 0.0.1)
     prox (0.0.1)
@@ -23,7 +30,7 @@ GEM
     rack-test (0.6.3)
       rack (>= 1.0)
     rake (10.4.2)
-    redis (3.2.1)
+    ruby-progressbar (1.7.0)
     tnt (0.1.0)
 
 PLATFORMS
@@ -33,7 +40,7 @@ DEPENDENCIES
   bundler
   chassis!
   minitest (= 5.4.2)
+  minitest-reporters
   mocha
   rack-test
   rake
-  redis
