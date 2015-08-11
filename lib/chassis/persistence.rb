@@ -20,7 +20,42 @@ module Chassis
       def included(base)
         base.class_eval do
           include Initializable
-          include Equalizer.new(:id)
+          #include Equalizer.new(:id)
+
+          # Compare the object with other object for equality
+          #
+          # @example
+          #   object.eql?(other)  # => true or false
+          #
+          # @param [Object] other
+          #   the other object to compare with
+          #
+          # @return [Boolean]
+          #
+          # @api public
+          def eql?(other)
+            instance_of?(other.class) && id.eql?(other.id)
+          end
+
+          # Compare the object with other object for equivalency
+          #
+          # @example
+          #   object == other  # => true or false
+          #
+          # @param [Object] other
+          #   the other object to compare with
+          #
+          # @return [Boolean]
+          #
+          # @api public
+          def ==(other)
+            other = coerce(other).first if respond_to?(:coerce, true)
+            other.kind_of?(self.class) && id == other.id
+          end
+
+          def hash
+            id.hash
+          end
 
           attr_accessor :id
         end

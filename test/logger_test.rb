@@ -1,12 +1,12 @@
 require_relative 'test_helper'
 
 class LoggerTest < MiniTest::Unit::TestCase
-  def test_log_level_defaults_to_env_variable
-    with_env :warn do
-      logger = Chassis::Logger.new $stdout
-      assert_equal Logger::WARN, logger.level
-    end
-  end
+  #def test_log_level_defaults_to_env_variable
+  #  with_env :warn do
+  #    logger = Chassis::Logger.new $stdout
+  #    assert_equal Logger::WARN, logger.level
+  #  end
+  #end
 
   def test_log_deafults_debug_without_env_variable
     refute ENV['LOG_LEVEL'], "Precondition: LOG_LEVEL must be blank"

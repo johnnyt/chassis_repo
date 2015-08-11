@@ -25,7 +25,7 @@ end
 
 namespace :test do
   Rake::TestTask.new(:all) do |t|
-    t.pattern = "test/**/*_test.rb"
+    t.test_files = FileList['test/**/*_test.rb']
   end
 end
 
