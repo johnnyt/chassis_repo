@@ -1,0 +1,39 @@
+PATH
+  remote: .
+  specs:
+    chassis (0.1.0)
+      interchange
+      lift
+      logger-better
+      prox
+      tnt
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    interchange (0.1.0)
+    lift (0.1.0)
+    logger-better (0.2.1)
+    metaclass (0.0.4)
+    minitest (5.7.0)
+    mocha (1.1.0)
+      metaclass (~> 0.0.1)
+    prox (0.0.1)
+    rack (1.6.4)
+    rack-test (0.6.3)
+      rack (>= 1.0)
+    rake (10.4.2)
+    redis (3.2.1)
+    tnt (0.1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler
+  chassis!
+  minitest
+  mocha
+  rack-test
+  rake
+  redis
