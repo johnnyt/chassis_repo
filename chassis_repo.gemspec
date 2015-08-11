@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "chassis/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "chassis"
+  spec.name          = "chassis_repo"
   spec.version       = Chassis::VERSION
   spec.authors       = ["ahawkins"]
   spec.email         = ["adam@hawkins.io"]
